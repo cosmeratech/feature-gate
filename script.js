@@ -39,7 +39,7 @@ class UserAccount {
   }
 }
 
-// CHILD CLASSES
+// Child Classes :
 
 class FreeUser extends UserAccount {
   onUse(feature) {
@@ -63,13 +63,13 @@ class EnterpriseUser extends UserAccount {
   }
 }
 
-// CREATE USERS
+// Create Users :
 
 const free = new FreeUser();
 const premium = new PremiumUser();
 const enterprise = new EnterpriseUser();
 
-// TEST
+// Test :
 
 free.useFeature("download");
 free.useFeature("download");
@@ -79,4 +79,5 @@ premium.useFeature("upload");
 premium.useFeature("upload");
 
 enterprise.useFeature("share");
+
 enterprise.useFeature("share");
